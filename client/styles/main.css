@@ -19,11 +19,11 @@ body.lights-on {
     background-color: white;
 }
 
-#info, #result, #error {
+#info, #result, #error, #instructions {
     color: white;
 }
 
-body.lights-on #info, body.lights-on #result, body.lights-on #error {
+body.lights-on #info, body.lights-on #result, body.lights-on #error, body.lights-on #instructions {
     color: black;
 }
 
