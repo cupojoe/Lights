@@ -1,0 +1,24 @@
+{
+  "generator-yeogurt": {
+    "config": {
+      "projectName": "Lights",
+      "versionControl": "git",
+      "useServer": false,
+      "singlePageApplication": false,
+      "htmlOption": "jade",
+      "jsOption": "none",
+      "cssOption": "css",
+      "cssFramework": "none",
+      "ieSupport": false,
+      "useGA": false,
+      "jshint": true,
+      "extras": [],
+      "useJsdoc": false,
+      "useKss": false,
+      "useDashboard": false,
+      "useTesting": false,
+      "useFTP": false
+    },
+    "version": "0.12.3"
+  }
+}

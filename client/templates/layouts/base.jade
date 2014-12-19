@@ -1,0 +1,40 @@
+//- Base template
+//- All other templates should extend from this
+
+//- [injector:jade]
+//- [endinjector]
+
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+        title Lights
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+        // build:css(client) styles/global.css
+        link(rel='stylesheet', href='/styles/main.css')
+        // [injector:css]
+        link(rel='stylesheet', href='styles/microphone.min.css')
+        // [endinjector]
+        // endbuild
+    body
+        <!--[if lte IE 7]>
+        <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/''>upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        block content
+
+
+        // build:js(client) scripts/global.js
+        script(src='/bower_components/jquery/dist/jquery.js')
+        script(src="scripts/microphone.js")
+        
+        // endbuild
+
+        // build:js(client) scripts/app.js
+        // [injector:js]
+        <script src="scripts/microphone.js"></script>
+        // [endinjector]
+        script(src='/scripts/app.js')
+        // endbuild
